@@ -3,7 +3,7 @@ package org.losewmac.kotlincourse.lesson4
 // Для каждого значения допиши подходящий тип данных
 
 //42
-val myInt1: Short = 42
+val myInt1: Int = 42
 
 // 98765432123456789L
 val myLong1: Long = 98765432123456789L
@@ -39,7 +39,7 @@ val myDouble2: Double = -0.001
 val myText2: String = "OpenAI"
 
 //“true”
-val myText3: String = “true”
+val myText3: String = "true"
 
 //'9'
 val myLetter2: Char = '9'
@@ -66,7 +66,7 @@ val myBoolean2: Boolean = false
 val myLetter3: Char = '@'
 
 //1024
-val myShort3: Short = 1024
+val myShort3: Int = 1024
 
 //1234567890123L
 val myLong4: Long = 1234567890123L
@@ -78,17 +78,16 @@ val myFloat4: Float = 10.01f
 val myDouble4: Double = -273.15
 
 //"SpaceX"
-val myText4: String = "SpaceX"
+val myText5: String = "SpaceX"
 
 //true
 val myBoolean3: Boolean = true
 
 //“🤯”
-val myText6: String = “🤯”
+val myText6: String = "🤯"
 
 //‘65535’ - одинарные кавычки только для Char, правильно так
 val myText7: String = "65535"
-val myShort4: Short = 65535
 
 //72057594037927935L
 val myLong5: Long = 72057594037927935L
@@ -109,7 +108,7 @@ val myBoolean4: Boolean = false
 val myLetter4: Char = 'x'
 
 //314
-val myShort5: Short = 314
+val myShort5: Int = 314
 
 //123456789123456789L
 val myLong6: Long = 123456789123456789L
