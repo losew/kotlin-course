@@ -31,9 +31,12 @@ fun getYearSeason(monthNumber: Int): String {
 // Задание 2: "Расчет Возраста Питомца"
 // Контекст: Создайте функцию, которая преобразует возраст собаки в "человеческие" годы. До 2 лет каждый год собаки равен 10.5 человеческим годам, после - каждый год равен 4 человеческим годам.
 
-fun getCalculatedPetAge(petAge: Double): Double{
-    val calculatedPetAge: Double = if (petAge in 0.0..2.0) {petAge * 10.5} else {(petAge - 2) * 4 + 2 * 10.5}
-    return calculatedPetAge
+fun getCalculatedPetAge(petAge: Double): Double {
+    return if (petAge in 0.0..2.0) {
+        petAge * 10.5
+    } else {
+        (petAge - 2) * 4 + 2 * 10.5
+    }
 }
 
 // Задание 3: "Определение Вида Транспорта"
@@ -115,7 +118,7 @@ fun getMovieByAge(age: Int): String{
         throw Exception("Некорректное значение возраста")} else
         return when {
             age in 5..10 -> "детские"
-            age in 5 until 18 -> "подростковые"
+            age in 5..<18 -> "подростковые"
             age >= 18 -> "18+"
             else -> "Вход запрещен"
         }
