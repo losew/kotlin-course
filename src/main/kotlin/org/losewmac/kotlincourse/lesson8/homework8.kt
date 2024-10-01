@@ -97,3 +97,19 @@ fun convertor5(string: String): String {
         else -> string
     }
 }
+
+// Доп задание таблица умножения
+fun multiplicationTable() {
+    print("   ") // печать отступа сверху слева
+    for (h in 1..9) { // цикл печати первой строки таблицы
+        print("%3d".format(h))
+    }
+    println("") // перевод на новую строку
+    for (i in 1..9) { // цикл печати таблицы
+        print("%3d".format(i)) // печать левой колонки цифр
+        for (j in 1..9) { // цикл печати строки
+            print("%3d".format(i * j))
+        }
+        println() // первод строки
+    }
+}
