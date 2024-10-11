@@ -35,6 +35,7 @@ fun main () {
     val map7 = mapOf<Double, Int>(1.0 to 0, 2.0 to 7, 3.0 to 14)
     for ((key, value) in map7) {
         val result = key / value
+//        println(result)
         if (value == 0) {
             println("Бесконечность")
         } else {
@@ -75,12 +76,12 @@ fun main () {
 
 // Задание 11: Использование Множества в Качестве Значения
 // Создай словарь, в котором ключи - это целые числа, а значения - изменяемые множества строк. Добавь данные в словарь. Получи значение по ключу (это должно быть множество строк) и добавь в это множество ещё строку. Распечатай полученное множество.
-    val map11 = mutableMapOf<Int, Set<String>>()
+    val map11 = mutableMapOf<Int, MutableSet<String>>()
     map11[1] = mutableSetOf("И раз", "и два", "и три")
     map11[2] = mutableSetOf("Четре", "Пять")
     map11[3] = mutableSetOf("Шесть", "Семь")
     println(map11[1])
-    map11[1] = mutableSetOf("И раз", "и два", "и три", "еще много много раз")
+    map11[1]?.add("пять")
     println(map11[1])
 
 // Задание 12: Поиск Элемента по Значению
@@ -97,34 +98,26 @@ fun main () {
         }
     }
 
-/* ======
-Разница между Array, List и Set в Kotlin заключается в следующем:
-Array — это структура данных, которая содержит фиксированное количество значений одного типа или его подтипов. Массив имеет строго фиксированный размер и не может уменьшаться или увеличиваться.
-List — упорядоченный набор элементов, к ним можно обращаться по индексам. В списке могут встречаться дубликаты. Список может динамически увеличиваться или уменьшаться в размере.
-Set — коллекция уникальных элементов, то есть повторяющиеся элементы исключены. Порядок элементов может быть любым.
-====== */
-
 
 // Напиши решения задач. В каждом случае нужно проанализировать и подобрать оптимальный тип словаря.
 // Задание 6: Словарь Библиотека
 // Ключи - автор книги, значения - список книг
-    val mapLibrary = mapOf<String, List<String>>()
+    val mapLibrary = mapOf<String, MutableList<String>>()
 
 // Задание 12: Справочник Растений
 // Ключи - типы растений (например, "Цветы", "Деревья"), значения - списки названий растений
-    val encyclopediaOfPlants = mapOf<String, Set<String>>()
+    val encyclopediaOfPlants = mapOf<String, MutableList<String>>()
 
 // Задание 8: Четвертьфинала
 // Ключи - названия спортивных команд, значения - списки игроков каждой команды
-    val competitions = mapOf<String, List<String>>()
+    val competitions = mapOf<String, MutableMap<Int, String>>()
 
 // Задание 9: Курс лечения
 // Ключи - даты, значения - список препаратов принимаемых в дату
-    val medicines = mapOf<String, Array<String>>()
+    val medicines = mapOf<String, MutableList<String>>()
 
 // Задание 10: Словарь Путешественника
 // Ключи - страны, значения - словари из городов со списком интересных мест.
-    val travelerDictionary = mapOf<String, Map<String, String>>()
+    val travelerDictionary = mapOf<String, MutableMap<String, MutableList<String>>>()
     
 }
-
