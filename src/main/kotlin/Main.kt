@@ -1,4 +1,4 @@
 fun main() {
-    val message = "I Love Kotlin"
+    val message = "I love Kotlin"
     println(message)
 }
