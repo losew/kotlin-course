@@ -74,18 +74,18 @@ fun main() {
 
 //    Задачи на подбор оптимального типа для словаря
 //    1. Словарь библиотека: Ключи - автор книги, значения - список книг
-    val map = mutableMapOf<String, MutableList<String>>()
+    val map101 = mutableMapOf<String, MutableList<String>>()
 
 //    2. Справочник растений: Ключи - типы растений (например, "Цветы", "Деревья"), значения - списки названий растений
-    val map = mapOf<String, List<String>>()
+    val map102 = mapOf<String, List<String>>()
 
 //    3. Четвертьфинала: Ключи - названия спортивных команд, значения - списки игроков каждой команды
-    val map = mapOf<String, MutableList<String>>()
+    val map103 = mapOf<String, MutableList<String>>()
 
 //    4. Курс лечения: Ключи - даты, значения - список препаратов принимаемых в дату
-    val map = mapOf<String, List<String>>()
+    val map104 = mapOf<String, List<String>>()
 
 //    5. Словарь путешественника: Ключи - страны, значения - словари из городов со списком интересных мест.
-    val map = mapOf<String, Map<String, List<String>>>()
+    val map105 = mapOf<String, Map<String, List<String>>>()
 
 }
