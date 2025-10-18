@@ -181,6 +181,6 @@ fun CategorizationOfNumbers(): Map<String, List<Int>> {
 //    Цель: Найти первый возраст в списке, который соответствует условию (больше второго аргумента) и вернуть его, либо null если значения не нашлось.
 val ages = listOf(22, 18, 30, 45, 17, null, 60)
 fun searchFirstElement(ages:List<Int?>, checkAge: Int): Int? {
-    val result = ages.firstOrNull { it != null && it > checkAge }
+    val result = ages.filterNotNull().firstOrNull() { it > checkAge }
     return result
 }
